@@ -9,6 +9,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
     margin: 0;
+    background-color:aliceblue;
 }
 
 .header {
@@ -18,15 +19,20 @@
     height: 80px;
     padding: 20px;
     color: white;
-    position: fixed;
     box-shadow: 0px 10px var(--dark-purple);
     
 }
 
 .myName {
+    background-color: var(--light-purple);
     display: inline-block;
     font-size:40px;
     margin-left: 70px
+}
+
+.myName span {
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
 }
 
 .nav {
@@ -36,10 +42,12 @@
 }
 
 .listType {
+    background-color: var(--light-purple);
     list-style-type: none;
 }
 
 .list {
+    background-color: var(--light-purple);
     display: inline-block;
     margin-right: 50px;
     font-size: 25px;
@@ -49,4 +57,56 @@
     color: var(--dark-purple);
     cursor: pointer;
     transition: .25s;
+}
+
+.aboutMe {
+    display: inline-block;
+    width: 700px;
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.aboutMe h2 {
+    font-size: xx-large;
+    color: var(--dark-purple);
+}
+
+.aboutMe p {
+    display: flex;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.stats {
+    float: left;
+    display: inline-block;
+    width: 330px;
+    margin-top: 80px;
+    padding-bottom: 120px;
+    color: var(--dark-purple);
+}
+ 
+.stats ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.stats ul li {
+    padding-top: 20px;
+}
+
+.stats span {
+    font-weight: bold;
+}
+
+.aboutMe img {
+    margin-top: 40px;
+    height: 40%;
+    width: 300px;
+    border-radius: 50%;
+    border: solid;
+    border-color: var(--dark-purple);
 }
