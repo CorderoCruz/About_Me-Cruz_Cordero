@@ -1,33 +1,40 @@
 :root {
     --dark-purple: rgb(43, 23, 49);
     --light-purple: rgb(197, 149, 221);
+    --background: rgb(208, 228, 245)
 
 }
 
 
-* {
+body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
     margin: 0;
-    background-color:aliceblue;
+    background-color:var(--background);
 }
 
 .header {
+    position: fixed;
+    position: relative;;
     background-color: var(--light-purple);
     margin: 0;
     width: 100%;
     height: 80px;
     padding: 20px;
     color: white;
-    box-shadow: 0px 10px var(--dark-purple);
+    box-shadow: 0px 10px 10px var(--dark-purple);
+    z-index: 1;
     
 }
 
 .myName {
+    margin-bottom: 0;
     background-color: var(--light-purple);
-    display: inline-block;
+    float: left;
     font-size:40px;
-    margin-left: 70px
+    margin-left: 230px;
+    margin-top: 15px;
+    word-spacing: 7px;
 }
 
 .myName span {
@@ -60,12 +67,15 @@
 }
 
 .aboutMe {
-    display: inline-block;
-    width: 700px;
-    color: black;
-    margin-top: 50px;
+    float: left;
+    width: 40%;
+    color: var(--dark-purple);
+    margin-top: 100px;
     text-align: center;
     padding: 20px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+
 }
 
 .aboutMe h2 {
@@ -74,18 +84,15 @@
 }
 
 .aboutMe p {
-    display: flex;
     margin-top: 15px;
     font-size: 18px;
     line-height: 30px;
 }
 
 .stats {
-    float: left;
-    display: inline-block;
-    width: 330px;
     margin-top: 80px;
-    padding-bottom: 120px;
+    float: left;
+    width: 330px;
     color: var(--dark-purple);
 }
  
@@ -103,10 +110,74 @@
 }
 
 .aboutMe img {
+    display: inline-block;
     margin-top: 40px;
     height: 40%;
-    width: 300px;
+    width: 230px;
     border-radius: 50%;
     border: solid;
     border-color: var(--dark-purple);
+    box-shadow: 10px 10px 10px;
 }
+
+.projects {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--dark-purple);
+    text-align: center;
+    margin-left: 10px;
+    width: 56%;
+    margin-top: 120px;
+    display: inline-block;
+    
+}   
+.projects h2 {
+    font-size: xx-large;
+}
+
+.grid img {
+    height: 175px;
+    width: 200px;
+    transition: .3s
+}
+
+.grid img:hover {
+    width: 100%;
+    transition: .3s .05s;
+    
+    
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.grid div {
+    border-radius: 10px;
+}
+
+.grid div:hover{
+    cursor: pointer;
+
+}
+
+
+.contactMe {
+
+    margin-top: 92.5px;
+    color: var(--dark-purple);
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+
+ a {
+    text-decoration: none;
+    color: var(--dark-purple);
+}
+
+
+
