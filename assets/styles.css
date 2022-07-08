@@ -148,6 +148,16 @@ body {
 
 }
 
+.sadboyhours_project {
+    border-radius: 10%;
+}
+
+
+.grid .sadboyhours_project:hover {
+    background-color: var(--light-purple);
+    width: 200px;
+}
+
 
 .grid {
     display: grid;
